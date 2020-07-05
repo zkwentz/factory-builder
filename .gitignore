@@ -2,9 +2,9 @@
 node_modules
 
 # builds
-build
+#build
 coverage
-dist
+#dist
 
 # misc
 .DS_Store

@@ -38,8 +38,10 @@ const build = (factory, parameters = {}) => {
   // Now, we're actually building the factory by remove the ID and
   // the timestamps (createdAt and updatedAt) from the factory if they're
   // even present.
-  const { id, createdAt, updatedAt, ...restProps } = factoryBuild;
-  factoryBuild = restProps;
+  
+  // WHY!?
+  // const { id, createdAt, updatedAt, ...restProps } = factoryBuild;
+  // factoryBuild = restProps;
 
   // Just before we return it, we want to pass the data back to
   // the developer so they can use the newly build data and maybe
